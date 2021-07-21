@@ -1,0 +1,25 @@
+{
+  "name": "pranshu-dobhal-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio using GatsbyJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gatsby develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranshudobhal/pranshudobhal-portfolio.git"
+  },
+  "author": "Pranshu Dobhal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranshudobhal/pranshudobhal-portfolio/issues"
+  },
+  "homepage": "https://github.com/pranshudobhal/pranshudobhal-portfolio#readme",
+  "dependencies": {
+    "gatsby": "^3.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
