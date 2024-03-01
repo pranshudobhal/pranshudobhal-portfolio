@@ -2,7 +2,7 @@ import { Introduction, Navbar } from './components'
 
 export default function Home() {
   return (
-    <main className='min-h-screen'>
+    <main className=''>
       <Navbar />
       <div className='my-16'>
         <Introduction />
