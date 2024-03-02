@@ -1,8 +1,6 @@
-'use client'
-
 import Image from 'next/image'
 import profilePhoto from './ProfilePhoto.jpg'
-import { Icon } from '@iconify/react'
+import { GithubIcon, LinkedinIcon, TwitterIcon } from '../Icons'
 
 export const Introduction = () => {
   return (
@@ -25,7 +23,7 @@ export const Introduction = () => {
             className='flex items-center gap-2'
             target='_blank'
           >
-            <Icon icon='skill-icons:twitter' />
+            <TwitterIcon />
             Twitter
           </a>
           <a
@@ -33,7 +31,7 @@ export const Introduction = () => {
             className='flex items-center gap-2'
             target='_blank'
           >
-            <Icon icon='skill-icons:github-light' />
+            <GithubIcon />
             GitHub
           </a>
           <a
@@ -41,7 +39,7 @@ export const Introduction = () => {
             className='flex items-center gap-2'
             target='_blank'
           >
-            <Icon icon='skill-icons:linkedin' />
+            <LinkedinIcon />
             LinkedIn
           </a>
         </div>
