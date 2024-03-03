@@ -10,6 +10,7 @@ export const Introduction = () => {
           src={profilePhoto}
           alt='Pranshu Dobhal'
           className='h-[175px] w-[175px] rounded-full object-cover'
+          priority={true}
         />
       </div>
       <div className='flex flex-col items-center justify-center sm:items-start'>
