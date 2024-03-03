@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Lato, Roboto } from 'next/font/google'
 import './globals.css'
 import classNames from 'classnames'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const lato = Lato({
   subsets: ['latin'],
@@ -35,7 +36,10 @@ export default function RootLayout({
         'font-lato'
       )}
     >
-      <body className='mx-auto my-12 max-w-2xl px-6'>{children}</body>
+      <body className='mx-auto my-12 max-w-2xl px-6'>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   )
 }
