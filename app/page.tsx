@@ -1,4 +1,5 @@
 import { Introduction, Posts } from './components'
+import { postData } from './mocks'
 
 export default function Home() {
   return (
@@ -7,7 +8,8 @@ export default function Home() {
         <Introduction />
       </section>
       <section>
-        <Posts />
+        <h2 className='mb-8 text-lg font-bold uppercase'>Recent Posts</h2>
+        <Posts data={postData} />
       </section>
     </main>
   )

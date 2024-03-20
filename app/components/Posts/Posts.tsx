@@ -1,27 +1,16 @@
-export const Posts = () => {
-  const postData = [
-    {
-      title: 'What is Semantic HTML and why do you need it?',
-      date: 'Jan 01, 2024',
-    },
-    {
-      title: 'New Features in JavaScript',
-      date: 'Mar 03, 2024',
-    },
-    {
-      title: 'A complete guide to CSS Grid',
-      date: 'Dec 20, 2023',
-    },
-  ]
+import { PostData } from '@/app/types'
+import { FC } from 'react'
 
+type PostsProps = {
+  data: PostData[]
+}
+
+export const Posts: FC<PostsProps> = ({ data }) => {
   return (
-    <div>
-      <h2 className='mb-8 text-lg font-bold uppercase'>Recent Posts</h2>
-      <div className='flex flex-col gap-6'>
-        {postData.map((post, index) => (
-          <Post key={index} data={post} />
-        ))}
-      </div>
+    <div className='flex flex-col gap-6'>
+      {data.map((post, index) => (
+        <Post key={index} data={post} />
+      ))}
     </div>
   )
 }

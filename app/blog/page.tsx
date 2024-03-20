@@ -1,3 +1,6 @@
+import { Posts } from '../components'
+import { postData } from '../mocks'
+
 export default function Blog() {
-  return <h1>Hello, Next.js!</h1>
+  return <Posts data={postData} />
 }
