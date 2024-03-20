@@ -1,12 +1,15 @@
-import { Introduction, Navbar } from './components'
+import { Introduction, Navbar, Posts } from './components'
 
 export default function Home() {
   return (
-    <main className=''>
+    <main>
       <Navbar />
-      <div className='my-16'>
+      <section className='mb-20 mt-16'>
         <Introduction />
-      </div>
+      </section>
+      <section>
+        <Posts />
+      </section>
     </main>
   )
 }
