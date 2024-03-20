@@ -3,6 +3,7 @@ import { Lato, Roboto } from 'next/font/google'
 import './globals.css'
 import classNames from 'classnames'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Navbar } from './components'
 
 const lato = Lato({
   subsets: ['latin'],
@@ -36,7 +37,8 @@ export default function RootLayout({
         'font-lato'
       )}
     >
-      <body className='mx-auto my-12 max-w-2xl px-6'>
+      <body className='mx-auto my-12 max-w-2xl bg-inherit px-6'>
+        <Navbar />
         {children}
         <SpeedInsights />
       </body>
