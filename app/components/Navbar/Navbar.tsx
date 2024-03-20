@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const Navbar = () => {
   return (
-    <nav className='flex w-full justify-between'>
+    <nav className='mb-16 flex w-full justify-between'>
       <h2 className='font-bold uppercase tracking-widest'>
         <Link href='/'>Pranshu Dobhal</Link>
       </h2>
