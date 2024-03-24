@@ -4,11 +4,11 @@ const nextConfig = {
     return [
       {
         source: '/blog',
-        destination: process.env.BLOG_URL,
+        destination: `${process.env.BLOG_URL}/blog`,
       },
       {
         source: '/blog/:path*',
-        destination: `${process.env.BLOG_URL}/:path*`,
+        destination: `${process.env.BLOG_URL}/blog/:path*`,
       },
     ]
   },
