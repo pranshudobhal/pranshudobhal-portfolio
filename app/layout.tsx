@@ -4,6 +4,7 @@ import './globals.css'
 import classNames from 'classnames'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Navbar } from './components'
+import { Analytics } from '@vercel/analytics/react'
 
 const lato = Lato({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body className='mx-auto my-12 max-w-2xl bg-inherit px-6'>
         <Navbar />
         {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
