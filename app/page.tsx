@@ -7,10 +7,10 @@ export default function Home() {
       <section className='mb-20'>
         <Introduction />
       </section>
-      <section>
+      {/* <section>
         <h2 className='mb-8 text-lg font-bold uppercase'>Recent Posts</h2>
         <Posts data={postData} />
-      </section>
+      </section> */}
     </main>
   )
 }
