@@ -1,5 +1,5 @@
 import { Introduction, Posts } from './components'
-import { postData } from './mocks'
+// import { postData } from './mocks'
 
 export default function Home() {
   return (
